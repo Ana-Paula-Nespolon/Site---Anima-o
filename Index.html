@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+
+    <style>
+        body{
+            font-family: Arial, cursive;
+            text-align: row;
+            font-size: larger;
+        }
+
+        .Quadro1{
+            height: 650px;
+            width: 650px;
+            position: absolute;
+            text-align:center;
+            padding-right: 5%;
+            font-size: 24px;
+            margin-top: 5px;
+            background-color: #F2BED1;
+            margin-right: 50px;
+            margin-left: 55px;
+            margin-bottom: 2px;
+            margin-top: 2vh;
+            margin-left: 3vh;
+            border-width: 3px;
+            border-radius: 3px;
+            color: rgb(110, 7, 83);
+            border: 5px solid #1f1e1e;
+        }
+
+        .heart {
+            margin: 60px;
+            background-color: blue;
+            height: 200px;
+            transform: rotate(-45deg);
+            width: 200px;
+            position: relative;
+            
+        } 
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            height: 200px;
+            position: absolute;
+            width: 200px;
+            
+        }
+
+        .heart:before {
+            top: -100px;
+            
+        }
+        
+        .heart:after {
+            left: 100px;
+            
+        }
+
+        .h1{
+            font-family: Arial, cursive;
+            font-size: 25px;
+            text-align: center;
+            color: rgb(110, 7, 83);
+        }
+
+        .h2{
+            font-family: Arial, cursive;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .heart {
+            margin: 300px;
+            background-color: #DB005B;
+            height: 200px;
+            transform: rotate(-45deg);
+            width: 200px;
+            position: absolute;
+            
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            background-color: #DB005B;
+            border-radius: 50%;
+            height: 200px;
+            position: absolute;
+            width: 200px;
+            border: 2px;
+            border-color: black;
+            
+        }
+        
+        .heart:before {
+            top: -100px;
+            
+        }
+        
+        .heart:after {
+            left: 100px;
+            
+        }
+
+       
+        .animationFadeInFadeOut {
+            animation:fadeInFadeOut 2s infinite;
+        }
+
+        @keyframes fadeInFadeOut{
+            0% {opacity: 1}
+            50% {opacity: 0.2}
+            100% {opacity: 1}
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="Quadro1">
+            <h1>Descodificadas</h1>
+            <h3>Eu amo tecnologia!</h3>
+            <br>
+                   
+        </div>
+
+        <div class="item heart animationFadeInFadeOut"></div>
+        </div>
+
+        
+    </div>   
+</body>
+</html>
